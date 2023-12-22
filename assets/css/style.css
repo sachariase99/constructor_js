@@ -2,15 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: black;
 }
 
-#myCanvas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#canvasContainer {
     background-color: black;
-    border: 1px solid white;
-    border-radius: 20px;
+    width: 900px;
+    height: 600px;
+}
+
+.container .img_size {
+    width: 900px;
+    max-height: 600px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.container .img_size img {
+    width: 600px;
+    background-color: black;
 }
